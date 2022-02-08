@@ -3,7 +3,7 @@ GangstaBet Valuation Chromium Extension
 
 
 # How to use:
-- Install extension: Video tutorial on how to install extension to (ALL) Chromium based browsers 
+- Install extension: Video tutorial on how to install extension to (ALL) Chromium based browsers [![GBET VALUATION VIDEO TUTORIAL](https://img.youtube.com/vi/c74kGZpdxAc/0.jpg)](https://www.youtube.com/watch?v=c74kGZpdxAc)
 
 # Roadmap:
 - Hot section (hot deals on gangstabet webpage)
