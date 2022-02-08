@@ -1,56 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      img {
-        max-width:100%;
-        height:auto;
-      }
-      body {
-        width: 600px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400;
-      }
-      button {
-        width:130px;
-        height:50px;
-      }
-      .nftName {
-        font-size: 20px;
-        font-weight: 400;
-        margin-bottom:20px;
-      }
-      #nftNameContainer {
-        display:none;
-      }
-      #nftNameContainer.active {
-        display:block;
-      }
-      #nftName {
-        font-size:18px;
-        font-weight:bold;
-        text-decoration:underline;
-        color:#000;
-      }
-      #content {
-        display:none;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-      }
-
-      #content.active {
-        display:grid;
-      }
-      .nftInfo>div {
-        line-height:1.625;
-      }
-      .nftInfo span {
-        font-weight:bold;
-      }
-    </style>
+    <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <p id="notOnPage">You are currently not on <a href="https://gangstabet.io" target="_blank">Gangstabet</a> webpage.</p>
+    <p id="notOnPage">You are currently not on <a href="https://gangstabet.io/marketplace" target="_blank">Gangstabet</a> webpage.</p>
     <div id="nftNameContainer" class="nftName">Gangstabet: <h1 id="nftName" style="font-weight:bold;display:inline;"></h1></div>
     <div id="content">
       <div>
@@ -77,6 +31,11 @@
         <div>Verdict: NFT is selling <span id="nftVerdict"></span> the price!</div>
       </div>
     </div>
+    <footer>
+Donations: <strong>hx950a30088c6e034a374fd3fdf9d6767d0e8981ed</strong><br>
+Donations will be used for further development. You can deposit <strong>ICX, nfts, tokens ($gbet, $cft, $fin, $baln, $omm)</strong>... everything related to <strong>ICON</strong> ecosystem.<br>
+You can also buy some of my nfts at: <a href="https://gangstabet.io/wallet/hx4b8c1ad050d7210ad7ef2fa431bf7a4190f392b3" target="_blank">Gangstabet</a> or <a href="https://craft.network/user/aborangin" target="_blank">Craft Network</a>
+    </footer>
     <script src="popup.js"></script>
   </body>
 </html>

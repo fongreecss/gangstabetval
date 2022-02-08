@@ -31,7 +31,7 @@ try {
 
   function scrapeNFTData() {
     let priceStr = document.querySelector(".price-ICX");
-    let priceUnit =  priceStr.querySelector('.unit').innerText;
+    let priceUnit =  '';
     let url = window.location.href;
     let tokenId = '0x' + parseInt(url.split("/")[url.split("/").length - 1]).toString(16);
     let priceNr = 0;
@@ -42,6 +42,8 @@ try {
     let accumulatedGbet = parseInt(document.querySelector(".gp-accumulated-gbet .quantity").innerText);
     
     if (priceStr) {
+      priceUnit =  priceStr.querySelector('.unit').innerText;
+      console.log(priceStr.innerText);
       priceStr = priceStr.innerText;
       priceStr = priceStr.split(priceUnit).join('').trim();
       priceNr = parseFloat(priceStr);
