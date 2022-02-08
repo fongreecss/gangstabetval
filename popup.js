@@ -105,6 +105,10 @@ try {
     let verdict = '';
     let color = '#0ff';
 
+    document.getElementById("notOnPage").style.display = "none";
+    document.getElementById("nftNameContainer").classList.add("active");
+    document.getElementById("nftName").innerText = "Loading...";
+
     Promise.all([
       fetch(`https://balanced.geometry.io/api/v1/stats/token-stats`).then((response) => response.json()),
       fetch(`https://gangsta-node-main.herokuapp.com/api/transactionanalytics`).then((response) => response.json()),
@@ -167,9 +171,9 @@ try {
       document.getElementById('nftVerdict').style = `color: ${color}`;
       document.getElementById('nftVerdict').innerHTML = verdict;
       //end
-      document.getElementById("notOnPage").style.display = "none";
+      
       document.getElementById("content").classList.add("active");
-      document.getElementById("nftNameContainer").classList.add("active");
+      
     });
 
   }
