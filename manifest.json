@@ -1,0 +1,26 @@
+{
+  "name": "Gangstabet NFT Valuation Tool",
+  "description": "Check how much a Gangstabet NFT is worth. Based on NFT floor price and current $GBET token price. ",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/gbet-icon-16.png",
+      "32": "/images/gbet-icon-32.png",
+      "48": "/images/gbet-icon-48.png",
+      "128": "/images/gbet-icon-144.png"
+    }
+  },
+  "icons": {
+    "16": "/images/gbet-icon-16.png",
+    "32": "/images/gbet-icon-32.png",
+    "48": "/images/gbet-icon-48.png",
+    "128": "/images/gbet-icon-144.png"
+  }
+}
