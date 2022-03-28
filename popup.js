@@ -39,11 +39,10 @@ try {
     let realPrice = 0;
     let multipliers = { K: 1000, M: 1000000, B: 1000000000 };
     let multiplier = 1;
-    let accumulatedGbet = parseInt(document.querySelector(".gp-accumulated-gbet .quantity").innerText);
+    let accumulatedGbet = parseInt(document.querySelector(".GBET-val").innerText);
     
-    if (priceStr) {
+    if (priceStr && (priceStr.innerText !== 'Not for sale')) {
       priceUnit =  priceStr.querySelector('.unit').innerText;
-      console.log(priceStr.innerText);
       priceStr = priceStr.innerText;
       priceStr = priceStr.split(priceUnit).join('').trim();
       priceNr = parseFloat(priceStr);
@@ -110,7 +109,7 @@ try {
     document.getElementById("nftName").innerText = "Loading...";
 
     Promise.all([
-      fetch(`https://balanced.geometry.io/api/v1/stats/token-stats`).then((response) => response.json()),
+      fetch(`https://balanced.sudoblock.io/api/v1/stats/token-stats`).then((response) => response.json()),
       fetch(`https://gangsta-node-main.herokuapp.com/api/transactionanalytics`).then((response) => response.json()),
       fetch(`https://gangsta-node-main.herokuapp.com/api/token/${tokenId}`).then((response) => response.json())
     ]).then(([tokenStats, transactionanalytics, tokenNftData]) => {
